@@ -1,0 +1,14 @@
+c:\users\administrator\documents\visual studio 2015\Projects\cost control test 1\cost control test 1\bin\Debug\cost control test 1.exe.config
+C:\Users\Administrator\documents\visual studio 2015\Projects\cost control test 1\cost control test 1\bin\Debug\cost control test 1.exe
+C:\Users\Administrator\documents\visual studio 2015\Projects\cost control test 1\cost control test 1\bin\Debug\cost control test 1.pdb
+C:\Users\Administrator\documents\visual studio 2015\Projects\cost control test 1\cost control test 1\bin\Debug\cost control test 1.xml
+C:\Users\Administrator\documents\visual studio 2015\Projects\cost control test 1\cost control test 1\obj\Debug\cost control test 1.vbprojResolveAssemblyReference.cache
+C:\Users\Administrator\documents\visual studio 2015\Projects\cost control test 1\cost control test 1\obj\Debug\cost_control_test_1.form_login.resources
+C:\Users\Administrator\documents\visual studio 2015\Projects\cost control test 1\cost control test 1\obj\Debug\cost_control_test_1.Resources.resources
+C:\Users\Administrator\documents\visual studio 2015\Projects\cost control test 1\cost control test 1\obj\Debug\cost control test 1.vbproj.GenerateResource.Cache
+C:\Users\Administrator\documents\visual studio 2015\Projects\cost control test 1\cost control test 1\obj\Debug\cost control test 1.exe
+C:\Users\Administrator\documents\visual studio 2015\Projects\cost control test 1\cost control test 1\obj\Debug\cost control test 1.xml
+C:\Users\Administrator\documents\visual studio 2015\Projects\cost control test 1\cost control test 1\obj\Debug\cost control test 1.pdb
+C:\Users\Administrator\documents\visual studio 2015\Projects\cost control test 1\cost control test 1\obj\Debug\Interop.MSDAOSP.dll
+C:\Users\Administrator\documents\visual studio 2015\Projects\cost control test 1\cost control test 1\obj\Debug\Interop.MSDASC.dll
+C:\Users\Administrator\documents\visual studio 2015\Projects\cost control test 1\cost control test 1\obj\Debug\cost control test 1.vbproj.ResolveComReference.cache
