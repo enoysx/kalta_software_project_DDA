@@ -9,6 +9,7 @@ Module DbConnection
     Public command As New OleDbCommand
 
     Public db As String
+    Public SQLstring As String
 
     Public Sub connection()
 

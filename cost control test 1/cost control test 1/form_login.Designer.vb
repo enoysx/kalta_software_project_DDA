@@ -22,8 +22,8 @@ Partial Class form_login
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.btn_exit = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lbl_admin = New System.Windows.Forms.Label()
         Me.txt_usr = New System.Windows.Forms.TextBox()
@@ -31,7 +31,8 @@ Partial Class form_login
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btn_login = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.jam_login = New System.Windows.Forms.Timer(Me.components)
+        Me.jam = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -39,27 +40,13 @@ Partial Class form_login
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Green
-        Me.Panel1.Controls.Add(Me.btn_exit)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.lbl_admin)
         Me.Panel1.Location = New System.Drawing.Point(-1, -47)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(339, 129)
+        Me.Panel1.Size = New System.Drawing.Size(338, 136)
         Me.Panel1.TabIndex = 0
-        '
-        'btn_exit
-        '
-        Me.btn_exit.BackgroundImage = Global.cost_control_test_1.My.Resources.Resources.icons8_close_48
-        Me.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btn_exit.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_exit.FlatAppearance.BorderSize = 0
-        Me.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_exit.Location = New System.Drawing.Point(295, 73)
-        Me.btn_exit.Name = "btn_exit"
-        Me.btn_exit.Size = New System.Drawing.Size(30, 30)
-        Me.btn_exit.TabIndex = 8
-        Me.btn_exit.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
@@ -67,10 +54,10 @@ Partial Class form_login
         Me.PictureBox1.BackgroundImage = Global.cost_control_test_1.My.Resources.Resources.kalta
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox1.Location = New System.Drawing.Point(19, 60)
+        Me.PictureBox1.Location = New System.Drawing.Point(42, 52)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(71, 60)
+        Me.PictureBox1.Size = New System.Drawing.Size(87, 72)
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
@@ -79,7 +66,7 @@ Partial Class form_login
         Me.lbl_admin.AutoSize = True
         Me.lbl_admin.Font = New System.Drawing.Font("Montserrat", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_admin.ForeColor = System.Drawing.Color.White
-        Me.lbl_admin.Location = New System.Drawing.Point(98, 74)
+        Me.lbl_admin.Location = New System.Drawing.Point(166, 76)
         Me.lbl_admin.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbl_admin.Name = "lbl_admin"
         Me.lbl_admin.Size = New System.Drawing.Size(156, 29)
@@ -89,18 +76,21 @@ Partial Class form_login
         '
         'txt_usr
         '
+        Me.txt_usr.Enabled = False
         Me.txt_usr.Location = New System.Drawing.Point(13, 139)
         Me.txt_usr.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_usr.Name = "txt_usr"
-        Me.txt_usr.Size = New System.Drawing.Size(299, 23)
+        Me.txt_usr.ReadOnly = True
+        Me.txt_usr.Size = New System.Drawing.Size(308, 23)
         Me.txt_usr.TabIndex = 4
+        Me.txt_usr.Text = "kalta-admin"
         '
         'txt_pass
         '
         Me.txt_pass.Location = New System.Drawing.Point(13, 202)
         Me.txt_pass.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_pass.Name = "txt_pass"
-        Me.txt_pass.Size = New System.Drawing.Size(299, 23)
+        Me.txt_pass.Size = New System.Drawing.Size(308, 23)
         Me.txt_pass.TabIndex = 5
         '
         'Label1
@@ -132,24 +122,27 @@ Partial Class form_login
         Me.btn_login.Font = New System.Drawing.Font("Montserrat Medium", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_login.ForeColor = System.Drawing.Color.White
         Me.btn_login.Image = Global.cost_control_test_1.My.Resources.Resources.icons8_login_30
-        Me.btn_login.Location = New System.Drawing.Point(13, 253)
+        Me.btn_login.Location = New System.Drawing.Point(170, 253)
         Me.btn_login.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_login.Name = "btn_login"
-        Me.btn_login.Size = New System.Drawing.Size(127, 39)
+        Me.btn_login.Size = New System.Drawing.Size(151, 38)
         Me.btn_login.TabIndex = 1
         Me.btn_login.Text = "Login"
         Me.btn_login.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btn_login.UseVisualStyleBackColor = False
         '
-        'Button1
+        'jam_login
         '
-        Me.Button1.Font = New System.Drawing.Font("Montserrat", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(229, 249)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(83, 52)
-        Me.Button1.TabIndex = 8
-        Me.Button1.Text = "Check" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Connection"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.jam_login.Interval = 1000
+        '
+        'jam
+        '
+        Me.jam.AutoSize = True
+        Me.jam.Location = New System.Drawing.Point(13, 255)
+        Me.jam.Name = "jam"
+        Me.jam.Size = New System.Drawing.Size(80, 36)
+        Me.jam.TabIndex = 8
+        Me.jam.Text = "25 apr 2022" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "14:30:00"
         '
         'form_login
         '
@@ -157,9 +150,8 @@ Partial Class form_login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(336, 317)
-        Me.ControlBox = False
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(334, 307)
+        Me.Controls.Add(Me.jam)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txt_pass)
@@ -167,7 +159,7 @@ Partial Class form_login
         Me.Controls.Add(Me.btn_login)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Montserrat", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "form_login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -188,6 +180,6 @@ Partial Class form_login
     Friend WithEvents txt_pass As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents btn_exit As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents jam_login As Timer
+    Friend WithEvents jam As Label
 End Class

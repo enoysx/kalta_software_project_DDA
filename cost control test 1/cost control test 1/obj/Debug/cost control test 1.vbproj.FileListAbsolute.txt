@@ -12,3 +12,5 @@ C:\Users\Administrator\documents\visual studio 2015\Projects\cost control test 1
 C:\Users\Administrator\documents\visual studio 2015\Projects\cost control test 1\cost control test 1\obj\Debug\Interop.MSDAOSP.dll
 C:\Users\Administrator\documents\visual studio 2015\Projects\cost control test 1\cost control test 1\obj\Debug\Interop.MSDASC.dll
 C:\Users\Administrator\documents\visual studio 2015\Projects\cost control test 1\cost control test 1\obj\Debug\cost control test 1.vbproj.ResolveComReference.cache
+C:\Users\Administrator\documents\visual studio 2015\Projects\cost control test 1\cost control test 1\obj\Debug\cost_control_test_1.dashboard.resources
+C:\Users\Administrator\documents\visual studio 2015\Projects\cost control test 1\cost control test 1\obj\Debug\cost_control_test_1.breakdown_po.resources
