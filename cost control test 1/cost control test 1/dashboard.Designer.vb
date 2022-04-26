@@ -88,7 +88,7 @@ Partial Class dashboard
         Me.Label1.BackColor = System.Drawing.Color.Green
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(7, 395)
+        Me.Label1.Location = New System.Drawing.Point(3, 395)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(137, 39)
         Me.Label1.TabIndex = 11
@@ -105,19 +105,20 @@ Partial Class dashboard
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 25)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(147, 443)
+        Me.Panel1.Size = New System.Drawing.Size(141, 443)
         Me.Panel1.TabIndex = 12
         '
         'btn_dash
         '
+        Me.btn_dash.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btn_dash.FlatAppearance.BorderSize = 0
         Me.btn_dash.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkOliveGreen
         Me.btn_dash.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_dash.ForeColor = System.Drawing.Color.White
-        Me.btn_dash.Image = Global.cost_control_test_1.My.Resources.Resources.icons8_dashboard_30
-        Me.btn_dash.Location = New System.Drawing.Point(3, 78)
+        Me.btn_dash.Location = New System.Drawing.Point(24, 78)
         Me.btn_dash.Name = "btn_dash"
-        Me.btn_dash.Size = New System.Drawing.Size(142, 45)
+        Me.btn_dash.Size = New System.Drawing.Size(96, 45)
         Me.btn_dash.TabIndex = 2
         Me.btn_dash.Text = "Dashboard"
         Me.btn_dash.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -125,14 +126,15 @@ Partial Class dashboard
         '
         'btn_inven
         '
+        Me.btn_inven.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btn_inven.FlatAppearance.BorderSize = 0
         Me.btn_inven.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkOliveGreen
         Me.btn_inven.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_inven.ForeColor = System.Drawing.Color.White
-        Me.btn_inven.Image = Global.cost_control_test_1.My.Resources.Resources.icons8_warehouse_30
-        Me.btn_inven.Location = New System.Drawing.Point(3, 226)
+        Me.btn_inven.Location = New System.Drawing.Point(24, 226)
         Me.btn_inven.Name = "btn_inven"
-        Me.btn_inven.Size = New System.Drawing.Size(142, 45)
+        Me.btn_inven.Size = New System.Drawing.Size(96, 45)
         Me.btn_inven.TabIndex = 1
         Me.btn_inven.Text = "Inventory"
         Me.btn_inven.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -140,14 +142,15 @@ Partial Class dashboard
         '
         'btn_cost_menu
         '
+        Me.btn_cost_menu.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btn_cost_menu.FlatAppearance.BorderSize = 0
         Me.btn_cost_menu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkOliveGreen
         Me.btn_cost_menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_cost_menu.ForeColor = System.Drawing.Color.White
-        Me.btn_cost_menu.Image = Global.cost_control_test_1.My.Resources.Resources.icons8_control_panel_30
-        Me.btn_cost_menu.Location = New System.Drawing.Point(3, 152)
+        Me.btn_cost_menu.Location = New System.Drawing.Point(24, 152)
         Me.btn_cost_menu.Name = "btn_cost_menu"
-        Me.btn_cost_menu.Size = New System.Drawing.Size(142, 45)
+        Me.btn_cost_menu.Size = New System.Drawing.Size(96, 45)
         Me.btn_cost_menu.TabIndex = 0
         Me.btn_cost_menu.Text = "Cost Control"
         Me.btn_cost_menu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -163,9 +166,9 @@ Partial Class dashboard
         Me.Panel2.BackColor = System.Drawing.Color.White
         Me.Panel2.Controls.Add(Me.status_trip)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel2.Location = New System.Drawing.Point(147, 442)
+        Me.Panel2.Location = New System.Drawing.Point(141, 442)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(714, 26)
+        Me.Panel2.Size = New System.Drawing.Size(720, 26)
         Me.Panel2.TabIndex = 13
         '
         'status_trip
@@ -173,7 +176,7 @@ Partial Class dashboard
         Me.status_trip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1, Me.hari_tgl})
         Me.status_trip.Location = New System.Drawing.Point(0, 2)
         Me.status_trip.Name = "status_trip"
-        Me.status_trip.Size = New System.Drawing.Size(714, 24)
+        Me.status_trip.Size = New System.Drawing.Size(720, 24)
         Me.status_trip.TabIndex = 0
         Me.status_trip.Text = "StatusStrip1"
         '
@@ -184,7 +187,7 @@ Partial Class dashboard
             Or System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom), System.Windows.Forms.ToolStripStatusLabelBorderSides)
         Me.ToolStripStatusLabel1.BorderStyle = System.Windows.Forms.Border3DStyle.RaisedOuter
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
-        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(349, 19)
+        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(352, 19)
         Me.ToolStripStatusLabel1.Spring = True
         Me.ToolStripStatusLabel1.Text = "PT. KALTA CITRA UTAMA"
         '
@@ -195,7 +198,7 @@ Partial Class dashboard
             Or System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom), System.Windows.Forms.ToolStripStatusLabelBorderSides)
         Me.hari_tgl.BorderStyle = System.Windows.Forms.Border3DStyle.RaisedOuter
         Me.hari_tgl.Name = "hari_tgl"
-        Me.hari_tgl.Size = New System.Drawing.Size(349, 19)
+        Me.hari_tgl.Size = New System.Drawing.Size(352, 19)
         Me.hari_tgl.Spring = True
         Me.hari_tgl.Text = "25 APR 2025 13:40:00"
         '
@@ -211,9 +214,9 @@ Partial Class dashboard
         Me.panel_cost_control.Controls.Add(Me.Button3)
         Me.panel_cost_control.Controls.Add(Me.Button2)
         Me.panel_cost_control.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.panel_cost_control.Location = New System.Drawing.Point(147, 25)
+        Me.panel_cost_control.Location = New System.Drawing.Point(141, 25)
         Me.panel_cost_control.Name = "panel_cost_control"
-        Me.panel_cost_control.Size = New System.Drawing.Size(714, 417)
+        Me.panel_cost_control.Size = New System.Drawing.Size(720, 417)
         Me.panel_cost_control.TabIndex = 14
         '
         'Button8
@@ -274,7 +277,7 @@ Partial Class dashboard
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(79, 19)
+        Me.Label2.Location = New System.Drawing.Point(110, 29)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(112, 24)
         Me.Label2.TabIndex = 2
@@ -328,9 +331,9 @@ Partial Class dashboard
         Me.panel_dash.Controls.Add(Me.Chart1)
         Me.panel_dash.Controls.Add(Me.Label4)
         Me.panel_dash.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.panel_dash.Location = New System.Drawing.Point(147, 25)
+        Me.panel_dash.Location = New System.Drawing.Point(141, 25)
         Me.panel_dash.Name = "panel_dash"
-        Me.panel_dash.Size = New System.Drawing.Size(714, 417)
+        Me.panel_dash.Size = New System.Drawing.Size(720, 417)
         Me.panel_dash.TabIndex = 5
         '
         'Chart1

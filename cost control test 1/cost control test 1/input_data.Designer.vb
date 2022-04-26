@@ -23,6 +23,7 @@ Partial Class breakdown_po
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.BACKToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.dgv_input = New System.Windows.Forms.DataGridView()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
@@ -37,8 +38,12 @@ Partial Class breakdown_po
         Me.TextBox11 = New System.Windows.Forms.TextBox()
         Me.TextBox12 = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btn_cancel = New System.Windows.Forms.Button()
         Me.TextBox14 = New System.Windows.Forms.TextBox()
+        Me.btn_delete = New System.Windows.Forms.Button()
         Me.Label14 = New System.Windows.Forms.Label()
+        Me.btn_edit = New System.Windows.Forms.Button()
         Me.TextBox15 = New System.Windows.Forms.TextBox()
         Me.TextBox16 = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
@@ -59,15 +64,10 @@ Partial Class breakdown_po
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.open_file_breakdown_po = New System.Windows.Forms.OpenFileDialog()
-        Me.BACKToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.btn_cancel = New System.Windows.Forms.Button()
-        Me.btn_delete = New System.Windows.Forms.Button()
-        Me.btn_edit = New System.Windows.Forms.Button()
         Me.input_file = New System.Windows.Forms.Button()
         Me.ex_file = New System.Windows.Forms.Button()
         Me.btn_save = New System.Windows.Forms.Button()
+        Me.open_file_breakdown_po = New System.Windows.Forms.OpenFileDialog()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.dgv_input, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -78,9 +78,16 @@ Partial Class breakdown_po
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BACKToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(929, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1035, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'BACKToolStripMenuItem
+        '
+        Me.BACKToolStripMenuItem.Image = Global.cost_control_test_1.My.Resources.Resources.icons8_back_64
+        Me.BACKToolStripMenuItem.Name = "BACKToolStripMenuItem"
+        Me.BACKToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
+        Me.BACKToolStripMenuItem.Text = "BACK"
         '
         'dgv_input
         '
@@ -90,7 +97,7 @@ Partial Class breakdown_po
         Me.dgv_input.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv_input.Location = New System.Drawing.Point(12, 345)
         Me.dgv_input.Name = "dgv_input"
-        Me.dgv_input.Size = New System.Drawing.Size(905, 234)
+        Me.dgv_input.Size = New System.Drawing.Size(1011, 234)
         Me.dgv_input.TabIndex = 1
         '
         'TextBox1
@@ -227,12 +234,55 @@ Partial Class breakdown_po
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "INPUT DATA"
         '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.White
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button1.Image = Global.cost_control_test_1.My.Resources.Resources.icons8_upload_18
+        Me.Button1.Location = New System.Drawing.Point(182, 225)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(68, 68)
+        Me.Button1.TabIndex = 31
+        Me.Button1.Text = "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Upload File"
+        Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'btn_cancel
+        '
+        Me.btn_cancel.BackColor = System.Drawing.Color.Transparent
+        Me.btn_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray
+        Me.btn_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray
+        Me.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_cancel.Image = Global.cost_control_test_1.My.Resources.Resources.icons8_cancel_30
+        Me.btn_cancel.Location = New System.Drawing.Point(777, 233)
+        Me.btn_cancel.Name = "btn_cancel"
+        Me.btn_cancel.Size = New System.Drawing.Size(75, 61)
+        Me.btn_cancel.TabIndex = 7
+        Me.btn_cancel.Text = "Cancel"
+        Me.btn_cancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btn_cancel.UseVisualStyleBackColor = False
+        '
         'TextBox14
         '
         Me.TextBox14.Location = New System.Drawing.Point(672, 155)
         Me.TextBox14.Name = "TextBox14"
         Me.TextBox14.Size = New System.Drawing.Size(180, 20)
         Me.TextBox14.TabIndex = 29
+        '
+        'btn_delete
+        '
+        Me.btn_delete.BackColor = System.Drawing.Color.Transparent
+        Me.btn_delete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray
+        Me.btn_delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray
+        Me.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_delete.Image = Global.cost_control_test_1.My.Resources.Resources.icons8_trash_can_30
+        Me.btn_delete.Location = New System.Drawing.Point(696, 233)
+        Me.btn_delete.Name = "btn_delete"
+        Me.btn_delete.Size = New System.Drawing.Size(75, 60)
+        Me.btn_delete.TabIndex = 6
+        Me.btn_delete.Text = "Delete"
+        Me.btn_delete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btn_delete.UseVisualStyleBackColor = False
         '
         'Label14
         '
@@ -242,6 +292,21 @@ Partial Class breakdown_po
         Me.Label14.Size = New System.Drawing.Size(53, 13)
         Me.Label14.TabIndex = 30
         Me.Label14.Text = "T.P. Awal"
+        '
+        'btn_edit
+        '
+        Me.btn_edit.BackColor = System.Drawing.Color.Transparent
+        Me.btn_edit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray
+        Me.btn_edit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray
+        Me.btn_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_edit.Image = Global.cost_control_test_1.My.Resources.Resources.icons8_edit_30
+        Me.btn_edit.Location = New System.Drawing.Point(615, 233)
+        Me.btn_edit.Name = "btn_edit"
+        Me.btn_edit.Size = New System.Drawing.Size(75, 60)
+        Me.btn_edit.TabIndex = 5
+        Me.btn_edit.Text = "Edit"
+        Me.btn_edit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btn_edit.UseVisualStyleBackColor = False
         '
         'TextBox15
         '
@@ -415,74 +480,6 @@ Partial Class breakdown_po
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Kode PO"
         '
-        'open_file_breakdown_po
-        '
-        Me.open_file_breakdown_po.FileName = "OpenFileDialog1"
-        '
-        'BACKToolStripMenuItem
-        '
-        Me.BACKToolStripMenuItem.Image = Global.cost_control_test_1.My.Resources.Resources.icons8_back_64
-        Me.BACKToolStripMenuItem.Name = "BACKToolStripMenuItem"
-        Me.BACKToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
-        Me.BACKToolStripMenuItem.Text = "BACK"
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.White
-        Me.Button1.Image = Global.cost_control_test_1.My.Resources.Resources.icons8_upload_18
-        Me.Button1.Location = New System.Drawing.Point(801, 184)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(51, 50)
-        Me.Button1.TabIndex = 31
-        Me.Button1.Text = "Upload File"
-        Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'btn_cancel
-        '
-        Me.btn_cancel.BackColor = System.Drawing.Color.Transparent
-        Me.btn_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray
-        Me.btn_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray
-        Me.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_cancel.Image = Global.cost_control_test_1.My.Resources.Resources.icons8_cancel_30
-        Me.btn_cancel.Location = New System.Drawing.Point(777, 243)
-        Me.btn_cancel.Name = "btn_cancel"
-        Me.btn_cancel.Size = New System.Drawing.Size(75, 50)
-        Me.btn_cancel.TabIndex = 7
-        Me.btn_cancel.Text = "Cancel"
-        Me.btn_cancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.btn_cancel.UseVisualStyleBackColor = False
-        '
-        'btn_delete
-        '
-        Me.btn_delete.BackColor = System.Drawing.Color.Transparent
-        Me.btn_delete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray
-        Me.btn_delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray
-        Me.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_delete.Image = Global.cost_control_test_1.My.Resources.Resources.icons8_trash_can_30
-        Me.btn_delete.Location = New System.Drawing.Point(696, 243)
-        Me.btn_delete.Name = "btn_delete"
-        Me.btn_delete.Size = New System.Drawing.Size(75, 50)
-        Me.btn_delete.TabIndex = 6
-        Me.btn_delete.Text = "Delete"
-        Me.btn_delete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.btn_delete.UseVisualStyleBackColor = False
-        '
-        'btn_edit
-        '
-        Me.btn_edit.BackColor = System.Drawing.Color.Transparent
-        Me.btn_edit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray
-        Me.btn_edit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray
-        Me.btn_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_edit.Image = Global.cost_control_test_1.My.Resources.Resources.icons8_edit_30
-        Me.btn_edit.Location = New System.Drawing.Point(615, 243)
-        Me.btn_edit.Name = "btn_edit"
-        Me.btn_edit.Size = New System.Drawing.Size(75, 50)
-        Me.btn_edit.TabIndex = 5
-        Me.btn_edit.Text = "Edit"
-        Me.btn_edit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.btn_edit.UseVisualStyleBackColor = False
-        '
         'input_file
         '
         Me.input_file.BackColor = System.Drawing.Color.White
@@ -514,20 +511,24 @@ Partial Class breakdown_po
         Me.btn_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray
         Me.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_save.Image = Global.cost_control_test_1.My.Resources.Resources.icons8_save_30
-        Me.btn_save.Location = New System.Drawing.Point(534, 243)
+        Me.btn_save.Location = New System.Drawing.Point(534, 233)
         Me.btn_save.Name = "btn_save"
-        Me.btn_save.Size = New System.Drawing.Size(75, 50)
+        Me.btn_save.Size = New System.Drawing.Size(75, 60)
         Me.btn_save.TabIndex = 4
         Me.btn_save.Text = "Save"
         Me.btn_save.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btn_save.UseVisualStyleBackColor = False
+        '
+        'open_file_breakdown_po
+        '
+        Me.open_file_breakdown_po.FileName = "OpenFileDialog1"
         '
         'breakdown_po
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(929, 591)
+        Me.ClientSize = New System.Drawing.Size(1035, 591)
         Me.Controls.Add(Me.dgv_input)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.GroupBox1)

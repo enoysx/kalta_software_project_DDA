@@ -48,9 +48,4 @@ Public Class form_login
         txt_pass.PasswordChar = "*"
     End Sub
 
-    Private Sub jam_login_Tick(sender As Object, e As EventArgs) Handles jam_login.Tick
-        jam.Text = Format(Now, "")
-    End Sub
-
-
 End Class
