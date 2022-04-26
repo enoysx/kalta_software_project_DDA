@@ -8,11 +8,6 @@
         pnl_inven.Visible = False
         panel_admin.Visible = False
     End Sub
-    '--/ Logout
-    Private Sub LogoutToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles LogoutToolStripMenuItem1.Click
-        Me.Close()
-        form_login.Show()
-    End Sub
     '--/ Breakdown RAP button 
     Private Sub brkdown_rap_Click(sender As Object, e As EventArgs)
         breakdown_rap.Show()
@@ -52,6 +47,23 @@
     '--/ showing form breakdown RAP
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         breakdown_rap.Show()
+    End Sub
+    '--/ Tender Form and Display
+    Private Sub btn_dash_tender_Click(sender As Object, e As EventArgs) Handles btn_dash_tender.Click
+        tender.Show()
+    End Sub
+    '--/ Logout
+    Private Sub LogoutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogoutToolStripMenuItem.Click
+        Me.Close()
+        form_login.Show()
+    End Sub
+
+    Private Sub KeluarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KeluarToolStripMenuItem.Click
+        Me.Close()
+    End Sub
+    '--/ About
+    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+        About.Show()
     End Sub
 
 End Class

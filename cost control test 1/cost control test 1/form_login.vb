@@ -4,13 +4,6 @@ Public Class form_login
         Call connection()
         txt_pass.Focus()
     End Sub
-    Private Sub Button3_Click(sender As Object, e As EventArgs)
-        Me.Close()
-    End Sub
-
-    Private Sub btn_exit_Click(sender As Object, e As EventArgs)
-        Me.Close()
-    End Sub
 
     Private Sub btn_login_Click(sender As Object, e As EventArgs) Handles btn_login.Click
 

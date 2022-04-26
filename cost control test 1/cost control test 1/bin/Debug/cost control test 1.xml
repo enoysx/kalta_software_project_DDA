@@ -22,6 +22,21 @@ cost control test 1
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:cost_control_test_1.My.Resources.Resources.assalamualaikum_png_44071">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:cost_control_test_1.My.Resources.Resources.assalamualaikum_png_44090">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:cost_control_test_1.My.Resources.Resources.DDA">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:cost_control_test_1.My.Resources.Resources.icons8_back_64">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -67,6 +82,11 @@ cost control test 1
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:cost_control_test_1.My.Resources.Resources.icons8_key_18">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:cost_control_test_1.My.Resources.Resources.icons8_law_30">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -83,6 +103,11 @@ cost control test 1
 </summary>
 </member>
 <member name="P:cost_control_test_1.My.Resources.Resources.icons8_money_30">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:cost_control_test_1.My.Resources.Resources.icons8_plus_math_15">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -118,6 +143,11 @@ cost control test 1
 </summary>
 </member>
 <member name="P:cost_control_test_1.My.Resources.Resources.kalta">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:cost_control_test_1.My.Resources.Resources.more_leaves">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
