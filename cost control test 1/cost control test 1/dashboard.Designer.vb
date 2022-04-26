@@ -31,6 +31,7 @@ Partial Class dashboard
         Me.LogoutToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btn_admin = New System.Windows.Forms.Button()
         Me.btn_dash = New System.Windows.Forms.Button()
         Me.btn_inven = New System.Windows.Forms.Button()
         Me.btn_cost_menu = New System.Windows.Forms.Button()
@@ -54,6 +55,12 @@ Partial Class dashboard
         Me.panel_dash = New System.Windows.Forms.Panel()
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.panel_admin = New System.Windows.Forms.Panel()
+        Me.Button14 = New System.Windows.Forms.Button()
+        Me.Button15 = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Button16 = New System.Windows.Forms.Button()
+        Me.Button17 = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -62,6 +69,7 @@ Partial Class dashboard
         Me.pnl_inven.SuspendLayout()
         Me.panel_dash.SuspendLayout()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.panel_admin.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -98,6 +106,7 @@ Partial Class dashboard
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Green
+        Me.Panel1.Controls.Add(Me.btn_admin)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.btn_dash)
         Me.Panel1.Controls.Add(Me.btn_inven)
@@ -107,6 +116,22 @@ Partial Class dashboard
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(141, 443)
         Me.Panel1.TabIndex = 12
+        '
+        'btn_admin
+        '
+        Me.btn_admin.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btn_admin.FlatAppearance.BorderSize = 0
+        Me.btn_admin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkOliveGreen
+        Me.btn_admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_admin.ForeColor = System.Drawing.Color.White
+        Me.btn_admin.Location = New System.Drawing.Point(24, 231)
+        Me.btn_admin.Name = "btn_admin"
+        Me.btn_admin.Size = New System.Drawing.Size(96, 45)
+        Me.btn_admin.TabIndex = 12
+        Me.btn_admin.Text = "Administrasi"
+        Me.btn_admin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_admin.UseVisualStyleBackColor = True
         '
         'btn_dash
         '
@@ -132,7 +157,7 @@ Partial Class dashboard
         Me.btn_inven.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkOliveGreen
         Me.btn_inven.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_inven.ForeColor = System.Drawing.Color.White
-        Me.btn_inven.Location = New System.Drawing.Point(24, 226)
+        Me.btn_inven.Location = New System.Drawing.Point(24, 300)
         Me.btn_inven.Name = "btn_inven"
         Me.btn_inven.Size = New System.Drawing.Size(96, 45)
         Me.btn_inven.TabIndex = 1
@@ -369,6 +394,81 @@ Partial Class dashboard
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Software Inventory dan Cost Control"
         '
+        'panel_admin
+        '
+        Me.panel_admin.Controls.Add(Me.Button14)
+        Me.panel_admin.Controls.Add(Me.Button15)
+        Me.panel_admin.Controls.Add(Me.Label5)
+        Me.panel_admin.Controls.Add(Me.Button16)
+        Me.panel_admin.Controls.Add(Me.Button17)
+        Me.panel_admin.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.panel_admin.Location = New System.Drawing.Point(141, 25)
+        Me.panel_admin.Name = "panel_admin"
+        Me.panel_admin.Size = New System.Drawing.Size(720, 417)
+        Me.panel_admin.TabIndex = 15
+        '
+        'Button14
+        '
+        Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button14.Image = Global.cost_control_test_1.My.Resources.Resources.icons8_law_30
+        Me.Button14.Location = New System.Drawing.Point(108, 158)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(150, 44)
+        Me.Button14.TabIndex = 4
+        Me.Button14.Text = "Tender"
+        Me.Button14.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button14.UseVisualStyleBackColor = True
+        '
+        'Button15
+        '
+        Me.Button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button15.Image = Global.cost_control_test_1.My.Resources.Resources.icons8_report_card_30
+        Me.Button15.Location = New System.Drawing.Point(292, 157)
+        Me.Button15.Name = "Button15"
+        Me.Button15.Size = New System.Drawing.Size(150, 45)
+        Me.Button15.TabIndex = 3
+        Me.Button15.Text = "Laporan"
+        Me.Button15.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button15.UseVisualStyleBackColor = True
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(111, 29)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(111, 24)
+        Me.Label5.TabIndex = 2
+        Me.Label5.Text = "Administrasi"
+        '
+        'Button16
+        '
+        Me.Button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button16.Image = Global.cost_control_test_1.My.Resources.Resources.icons8_worker_30
+        Me.Button16.Location = New System.Drawing.Point(108, 89)
+        Me.Button16.Name = "Button16"
+        Me.Button16.Size = New System.Drawing.Size(150, 44)
+        Me.Button16.TabIndex = 1
+        Me.Button16.Text = "Pekerjaan"
+        Me.Button16.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button16.UseVisualStyleBackColor = True
+        '
+        'Button17
+        '
+        Me.Button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button17.Image = Global.cost_control_test_1.My.Resources.Resources.icons8_money_30
+        Me.Button17.Location = New System.Drawing.Point(292, 89)
+        Me.Button17.Name = "Button17"
+        Me.Button17.Size = New System.Drawing.Size(150, 44)
+        Me.Button17.TabIndex = 0
+        Me.Button17.Text = "Upah Kerja"
+        Me.Button17.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button17.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button17.UseVisualStyleBackColor = True
+        '
         'dashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -377,6 +477,7 @@ Partial Class dashboard
         Me.BackgroundImage = Global.cost_control_test_1.My.Resources.Resources.kalta
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.ClientSize = New System.Drawing.Size(861, 468)
+        Me.Controls.Add(Me.panel_admin)
         Me.Controls.Add(Me.panel_cost_control)
         Me.Controls.Add(Me.pnl_inven)
         Me.Controls.Add(Me.panel_dash)
@@ -407,6 +508,8 @@ Partial Class dashboard
         Me.panel_dash.ResumeLayout(False)
         Me.panel_dash.PerformLayout()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.panel_admin.ResumeLayout(False)
+        Me.panel_admin.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -439,4 +542,11 @@ Partial Class dashboard
     Friend WithEvents panel_dash As Panel
     Friend WithEvents Chart1 As DataVisualization.Charting.Chart
     Friend WithEvents Label4 As Label
+    Friend WithEvents btn_admin As Button
+    Friend WithEvents panel_admin As Panel
+    Friend WithEvents Button14 As Button
+    Friend WithEvents Button15 As Button
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Button16 As Button
+    Friend WithEvents Button17 As Button
 End Class

@@ -67,12 +67,27 @@ cost control test 1
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:cost_control_test_1.My.Resources.Resources.icons8_law_30">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:cost_control_test_1.My.Resources.Resources.icons8_login_30">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:cost_control_test_1.My.Resources.Resources.icons8_microsoft_excel_2019_48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:cost_control_test_1.My.Resources.Resources.icons8_money_30">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:cost_control_test_1.My.Resources.Resources.icons8_report_card_30">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -93,6 +108,11 @@ cost control test 1
 </summary>
 </member>
 <member name="P:cost_control_test_1.My.Resources.Resources.icons8_warehouse_30">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:cost_control_test_1.My.Resources.Resources.icons8_worker_30">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

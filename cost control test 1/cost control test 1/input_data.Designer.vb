@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class breakdown_po
+Partial Class breakdown_rap
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,6 +22,7 @@ Partial Class breakdown_po
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(breakdown_rap))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.BACKToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.dgv_input = New System.Windows.Forms.DataGridView()
@@ -78,7 +79,7 @@ Partial Class breakdown_po
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BACKToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1035, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(930, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -97,7 +98,7 @@ Partial Class breakdown_po
         Me.dgv_input.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv_input.Location = New System.Drawing.Point(12, 345)
         Me.dgv_input.Name = "dgv_input"
-        Me.dgv_input.Size = New System.Drawing.Size(1011, 234)
+        Me.dgv_input.Size = New System.Drawing.Size(906, 234)
         Me.dgv_input.TabIndex = 1
         '
         'TextBox1
@@ -523,19 +524,20 @@ Partial Class breakdown_po
         '
         Me.open_file_breakdown_po.FileName = "OpenFileDialog1"
         '
-        'breakdown_po
+        'breakdown_rap
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1035, 591)
+        Me.ClientSize = New System.Drawing.Size(930, 591)
         Me.Controls.Add(Me.dgv_input)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "breakdown_po"
+        Me.Name = "breakdown_rap"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "BREAKDOWN PO"
+        Me.Text = "BREAKDOWN RAP"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
