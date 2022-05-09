@@ -26,6 +26,10 @@ Partial Class dashboard
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(dashboard))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.LogoutToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LogoutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.KeluarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MasterDataAdminToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btn_admin = New System.Windows.Forms.Button()
@@ -38,10 +42,6 @@ Partial Class dashboard
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.hari_tgl = New System.Windows.Forms.ToolStripStatusLabel()
         Me.panel_cost_control = New System.Windows.Forms.Panel()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -57,10 +57,6 @@ Partial Class dashboard
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Button16 = New System.Windows.Forms.Button()
         Me.Button17 = New System.Windows.Forms.Button()
-        Me.MasterDataAdminToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LogoutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.KeluarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -91,6 +87,29 @@ Partial Class dashboard
         Me.LogoutToolStripMenuItem1.Size = New System.Drawing.Size(37, 19)
         Me.LogoutToolStripMenuItem1.Text = "File"
         '
+        'LogoutToolStripMenuItem
+        '
+        Me.LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem"
+        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.LogoutToolStripMenuItem.Text = "Logout"
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
+        '
+        'KeluarToolStripMenuItem
+        '
+        Me.KeluarToolStripMenuItem.Name = "KeluarToolStripMenuItem"
+        Me.KeluarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.KeluarToolStripMenuItem.Text = "Keluar"
+        '
+        'MasterDataAdminToolStripMenuItem
+        '
+        Me.MasterDataAdminToolStripMenuItem.Name = "MasterDataAdminToolStripMenuItem"
+        Me.MasterDataAdminToolStripMenuItem.Size = New System.Drawing.Size(121, 19)
+        Me.MasterDataAdminToolStripMenuItem.Text = "Master Data Admin"
+        '
         'Label1
         '
         Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
@@ -98,7 +117,7 @@ Partial Class dashboard
         Me.Label1.BackColor = System.Drawing.Color.Green
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(3, 395)
+        Me.Label1.Location = New System.Drawing.Point(3, 398)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(137, 39)
         Me.Label1.TabIndex = 11
@@ -116,7 +135,7 @@ Partial Class dashboard
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 25)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(141, 443)
+        Me.Panel1.Size = New System.Drawing.Size(141, 446)
         Me.Panel1.TabIndex = 12
         '
         'btn_admin
@@ -193,7 +212,7 @@ Partial Class dashboard
         Me.Panel2.BackColor = System.Drawing.Color.White
         Me.Panel2.Controls.Add(Me.status_trip)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel2.Location = New System.Drawing.Point(141, 442)
+        Me.Panel2.Location = New System.Drawing.Point(141, 445)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(720, 26)
         Me.Panel2.TabIndex = 13
@@ -231,10 +250,6 @@ Partial Class dashboard
         '
         'panel_cost_control
         '
-        Me.panel_cost_control.Controls.Add(Me.Button8)
-        Me.panel_cost_control.Controls.Add(Me.Button10)
-        Me.panel_cost_control.Controls.Add(Me.Button6)
-        Me.panel_cost_control.Controls.Add(Me.Button7)
         Me.panel_cost_control.Controls.Add(Me.Button4)
         Me.panel_cost_control.Controls.Add(Me.Button5)
         Me.panel_cost_control.Controls.Add(Me.Label2)
@@ -243,44 +258,8 @@ Partial Class dashboard
         Me.panel_cost_control.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panel_cost_control.Location = New System.Drawing.Point(141, 25)
         Me.panel_cost_control.Name = "panel_cost_control"
-        Me.panel_cost_control.Size = New System.Drawing.Size(720, 417)
+        Me.panel_cost_control.Size = New System.Drawing.Size(720, 420)
         Me.panel_cost_control.TabIndex = 14
-        '
-        'Button8
-        '
-        Me.Button8.Location = New System.Drawing.Point(83, 305)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(150, 34)
-        Me.Button8.TabIndex = 8
-        Me.Button8.Text = "Breakdown RAP"
-        Me.Button8.UseVisualStyleBackColor = True
-        '
-        'Button10
-        '
-        Me.Button10.Location = New System.Drawing.Point(264, 305)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(150, 34)
-        Me.Button10.TabIndex = 7
-        Me.Button10.Text = "Breakdown PO"
-        Me.Button10.UseVisualStyleBackColor = True
-        '
-        'Button6
-        '
-        Me.Button6.Location = New System.Drawing.Point(83, 231)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(150, 34)
-        Me.Button6.TabIndex = 6
-        Me.Button6.Text = "Breakdown RAP"
-        Me.Button6.UseVisualStyleBackColor = True
-        '
-        'Button7
-        '
-        Me.Button7.Location = New System.Drawing.Point(264, 231)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(150, 34)
-        Me.Button7.TabIndex = 5
-        Me.Button7.Text = "Breakdown PO"
-        Me.Button7.UseVisualStyleBackColor = True
         '
         'Button4
         '
@@ -288,7 +267,7 @@ Partial Class dashboard
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(150, 34)
         Me.Button4.TabIndex = 4
-        Me.Button4.Text = "Breakdown RAP"
+        Me.Button4.Text = "BPK KANTOR"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button5
@@ -297,7 +276,7 @@ Partial Class dashboard
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(150, 34)
         Me.Button5.TabIndex = 3
-        Me.Button5.Text = "Breakdown PO"
+        Me.Button5.Text = "BPK PROYEK"
         Me.Button5.UseVisualStyleBackColor = True
         '
         'Label2
@@ -316,7 +295,7 @@ Partial Class dashboard
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(150, 34)
         Me.Button3.TabIndex = 1
-        Me.Button3.Text = "Breakdown RAP"
+        Me.Button3.Text = "BREAKDOWN RAP"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button2
@@ -325,7 +304,7 @@ Partial Class dashboard
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(150, 34)
         Me.Button2.TabIndex = 0
-        Me.Button2.Text = "Breakdown PO"
+        Me.Button2.Text = "BREAKDOWN PO"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'pnl_inven
@@ -359,7 +338,7 @@ Partial Class dashboard
         Me.panel_dash.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panel_dash.Location = New System.Drawing.Point(141, 25)
         Me.panel_dash.Name = "panel_dash"
-        Me.panel_dash.Size = New System.Drawing.Size(720, 417)
+        Me.panel_dash.Size = New System.Drawing.Size(720, 420)
         Me.panel_dash.TabIndex = 5
         '
         'Label4
@@ -382,7 +361,7 @@ Partial Class dashboard
         Me.panel_admin.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panel_admin.Location = New System.Drawing.Point(141, 25)
         Me.panel_admin.Name = "panel_admin"
-        Me.panel_admin.Size = New System.Drawing.Size(720, 417)
+        Me.panel_admin.Size = New System.Drawing.Size(720, 420)
         Me.panel_admin.TabIndex = 15
         '
         'btn_dash_tender
@@ -447,29 +426,6 @@ Partial Class dashboard
         Me.Button17.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.Button17.UseVisualStyleBackColor = True
         '
-        'MasterDataAdminToolStripMenuItem
-        '
-        Me.MasterDataAdminToolStripMenuItem.Name = "MasterDataAdminToolStripMenuItem"
-        Me.MasterDataAdminToolStripMenuItem.Size = New System.Drawing.Size(121, 19)
-        Me.MasterDataAdminToolStripMenuItem.Text = "Master Data Admin"
-        '
-        'LogoutToolStripMenuItem
-        '
-        Me.LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem"
-        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.LogoutToolStripMenuItem.Text = "Logout"
-        '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
-        '
-        'KeluarToolStripMenuItem
-        '
-        Me.KeluarToolStripMenuItem.Name = "KeluarToolStripMenuItem"
-        Me.KeluarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.KeluarToolStripMenuItem.Text = "Keluar"
-        '
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
@@ -483,10 +439,10 @@ Partial Class dashboard
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImage = Global.cost_control_test_1.My.Resources.Resources.kalta
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.ClientSize = New System.Drawing.Size(861, 468)
+        Me.ClientSize = New System.Drawing.Size(861, 471)
+        Me.Controls.Add(Me.panel_cost_control)
         Me.Controls.Add(Me.panel_dash)
         Me.Controls.Add(Me.panel_admin)
-        Me.Controls.Add(Me.panel_cost_control)
         Me.Controls.Add(Me.pnl_inven)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
@@ -536,10 +492,6 @@ Partial Class dashboard
     Friend WithEvents panel_cost_control As Panel
     Friend WithEvents pnl_inven As Panel
     Friend WithEvents Label3 As Label
-    Friend WithEvents Button8 As Button
-    Friend WithEvents Button10 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button7 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Label2 As Label

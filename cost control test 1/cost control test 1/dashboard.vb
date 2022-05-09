@@ -62,7 +62,7 @@
         Me.Close()
     End Sub
     '--/ About
-    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) 
         About.Show()
     End Sub
 

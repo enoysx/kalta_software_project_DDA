@@ -347,10 +347,9 @@ Partial Class tender
         '
         'btn_cancel
         '
-        Me.btn_cancel.BackColor = System.Drawing.Color.Honeydew
+        Me.btn_cancel.BackColor = System.Drawing.Color.LightGray
         Me.btn_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray
         Me.btn_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray
-        Me.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_cancel.Image = Global.cost_control_test_1.My.Resources.Resources.icons8_cancel_30
         Me.btn_cancel.Location = New System.Drawing.Point(608, 221)
         Me.btn_cancel.Name = "btn_cancel"
@@ -362,10 +361,9 @@ Partial Class tender
         '
         'btn_delete
         '
-        Me.btn_delete.BackColor = System.Drawing.Color.Honeydew
+        Me.btn_delete.BackColor = System.Drawing.Color.LightGray
         Me.btn_delete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray
         Me.btn_delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray
-        Me.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_delete.Image = Global.cost_control_test_1.My.Resources.Resources.icons8_trash_can_30
         Me.btn_delete.Location = New System.Drawing.Point(527, 221)
         Me.btn_delete.Name = "btn_delete"
@@ -377,10 +375,9 @@ Partial Class tender
         '
         'btn_edit
         '
-        Me.btn_edit.BackColor = System.Drawing.Color.Honeydew
+        Me.btn_edit.BackColor = System.Drawing.Color.LightGray
         Me.btn_edit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray
         Me.btn_edit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray
-        Me.btn_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_edit.Image = Global.cost_control_test_1.My.Resources.Resources.icons8_edit_30
         Me.btn_edit.Location = New System.Drawing.Point(446, 221)
         Me.btn_edit.Name = "btn_edit"
@@ -392,10 +389,9 @@ Partial Class tender
         '
         'btn_save
         '
-        Me.btn_save.BackColor = System.Drawing.Color.Honeydew
+        Me.btn_save.BackColor = System.Drawing.Color.LightGray
         Me.btn_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray
         Me.btn_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray
-        Me.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_save.Image = Global.cost_control_test_1.My.Resources.Resources.icons8_save_30
         Me.btn_save.Location = New System.Drawing.Point(365, 221)
         Me.btn_save.Name = "btn_save"
@@ -426,7 +422,6 @@ Partial Class tender
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.BackgroundImage = Global.cost_control_test_1.My.Resources.Resources.more_leaves
         Me.ClientSize = New System.Drawing.Size(833, 583)
         Me.Controls.Add(Me.btn_cancel)
         Me.Controls.Add(Me.btn_delete)
@@ -441,6 +436,7 @@ Partial Class tender
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "tender"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TENDER"
         CType(Me.dgv_tender, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)

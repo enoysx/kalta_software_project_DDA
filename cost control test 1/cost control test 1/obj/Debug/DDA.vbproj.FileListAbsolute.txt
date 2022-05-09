@@ -15,3 +15,21 @@ C:\Users\Administrator\Source\Repos\kalta_software_testing\cost control test 1\c
 C:\Users\Administrator\Source\Repos\kalta_software_testing\cost control test 1\cost control test 1\bin\Debug\cost control test 1.exe
 C:\Users\Administrator\Source\Repos\kalta_software_testing\cost control test 1\cost control test 1\bin\Debug\cost control test 1.pdb
 C:\Users\Administrator\Source\Repos\kalta_software_testing\cost control test 1\cost control test 1\bin\Debug\cost control test 1.xml
+C:\Users\Administrator\Source\Repos\kalta_software_project_DDA\cost control test 1\cost control test 1\bin\Debug\cost control test 1.exe.config
+C:\Users\Administrator\Source\Repos\kalta_software_project_DDA\cost control test 1\cost control test 1\obj\Debug\Interop.MSDAOSP.dll
+C:\Users\Administrator\Source\Repos\kalta_software_project_DDA\cost control test 1\cost control test 1\obj\Debug\Interop.MSDASC.dll
+C:\Users\Administrator\Source\Repos\kalta_software_project_DDA\cost control test 1\cost control test 1\obj\Debug\DDA.vbproj.ResolveComReference.cache
+C:\Users\Administrator\Source\Repos\kalta_software_project_DDA\cost control test 1\cost control test 1\obj\Debug\cost control test 1.exe
+C:\Users\Administrator\Source\Repos\kalta_software_project_DDA\cost control test 1\cost control test 1\obj\Debug\cost control test 1.xml
+C:\Users\Administrator\Source\Repos\kalta_software_project_DDA\cost control test 1\cost control test 1\obj\Debug\cost control test 1.pdb
+C:\Users\Administrator\Source\Repos\kalta_software_project_DDA\cost control test 1\cost control test 1\bin\Debug\cost control test 1.exe
+C:\Users\Administrator\Source\Repos\kalta_software_project_DDA\cost control test 1\cost control test 1\bin\Debug\cost control test 1.pdb
+C:\Users\Administrator\Source\Repos\kalta_software_project_DDA\cost control test 1\cost control test 1\bin\Debug\cost control test 1.xml
+C:\Users\Administrator\Source\Repos\kalta_software_project_DDA\cost control test 1\cost control test 1\obj\Debug\DDA.vbprojResolveAssemblyReference.cache
+C:\Users\Administrator\Source\Repos\kalta_software_project_DDA\cost control test 1\cost control test 1\obj\Debug\cost_control_test_1.About.resources
+C:\Users\Administrator\Source\Repos\kalta_software_project_DDA\cost control test 1\cost control test 1\obj\Debug\cost_control_test_1.dashboard.resources
+C:\Users\Administrator\Source\Repos\kalta_software_project_DDA\cost control test 1\cost control test 1\obj\Debug\cost_control_test_1.form_login.resources
+C:\Users\Administrator\Source\Repos\kalta_software_project_DDA\cost control test 1\cost control test 1\obj\Debug\cost_control_test_1.breakdown_rap.resources
+C:\Users\Administrator\Source\Repos\kalta_software_project_DDA\cost control test 1\cost control test 1\obj\Debug\cost_control_test_1.Resources.resources
+C:\Users\Administrator\Source\Repos\kalta_software_project_DDA\cost control test 1\cost control test 1\obj\Debug\cost_control_test_1.tender.resources
+C:\Users\Administrator\Source\Repos\kalta_software_project_DDA\cost control test 1\cost control test 1\obj\Debug\DDA.vbproj.GenerateResource.Cache
