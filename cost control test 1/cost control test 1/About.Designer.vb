@@ -52,7 +52,7 @@ Partial Class about
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(189, 38)
+        Me.Label2.Location = New System.Drawing.Point(189, 36)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(69, 13)
         Me.Label2.TabIndex = 2
@@ -61,16 +61,16 @@ Partial Class about
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(189, 62)
+        Me.Label3.Location = New System.Drawing.Point(189, 60)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(97, 13)
+        Me.Label3.Size = New System.Drawing.Size(78, 13)
         Me.Label3.TabIndex = 3
-        Me.Label3.Text = "DandyDevelopApp"
+        Me.Label3.Text = "Copyright 2022"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(189, 90)
+        Me.Label4.Location = New System.Drawing.Point(189, 84)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(156, 13)
         Me.Label4.TabIndex = 4
@@ -80,7 +80,7 @@ Partial Class about
         '
         Me.RichTextBox1.Location = New System.Drawing.Point(192, 119)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(269, 146)
+        Me.RichTextBox1.Size = New System.Drawing.Size(243, 146)
         Me.RichTextBox1.TabIndex = 5
         Me.RichTextBox1.Text = ""
         '
@@ -88,7 +88,7 @@ Partial Class about
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(473, 277)
+        Me.ClientSize = New System.Drawing.Size(447, 277)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
